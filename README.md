@@ -18,26 +18,26 @@
 
 ##### Table 1. "hospitals" :
 #####  Attributes 
-  hospitalid     Int       @unique
-  hospitalname   String    @db.VarChar(255) @unique
+ - hospitalid     Int       @unique
+ - hospitalname   String    @db.VarChar(255) @unique
 
 ##### Table 2. "psychiatrists" :
 #####  Attributes 
-  psychid           String    @db.VarChar(255) @unique
-  psychname         String    @db.VarChar(255)
-  hospitalid        Int       @unique
+ - psychid           String    @db.VarChar(255) @unique
+ - psychname         String    @db.VarChar(255)
+ - hospitalid        Int       @unique
 
 ##### Table 3. "patientdetails" :
 #####  Attributes 
-  patientid            String    @db.VarChar(255) @unique
-  patientname          String    @db.VarChar(255)
-  address              String    @db.VarChar(255)
-  email                String    @db.VarChar(255)
-  phoneno              String    @db.VarChar(255)
-  password             String    @db.VarChar(255)
-  patientphotolink     String    @db.VarChar(255)
-  psychid              String    @db.VarChar(255)
-  hospitalid           String    @db.VarChar(255)
+ - patientid            String    @db.VarChar(255) @unique
+ - patientname          String    @db.VarChar(255)
+ - address              String    @db.VarChar(255)
+ - email                String    @db.VarChar(255)
+ - phoneno              String    @db.VarChar(255)
+ - password             String    @db.VarChar(255)
+ - patientphotolink     String    @db.VarChar(255)
+ - psychid              String    @db.VarChar(255)
+ - hospitalid           String    @db.VarChar(255)
 
 ### API End Points :  For this Endpoints add the Domain URL.Refer to Filemanger.Postman.collection file in repository
 
