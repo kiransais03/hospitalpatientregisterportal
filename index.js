@@ -8,7 +8,7 @@ app.use(express.json());
 app.get('/',(req,res)=>{
     res.status(200).send({
         status : 200,
-        msg : "Hello how are you",
+        msg : "Hello This is backend for Hospital Patient Register Portal ",
     })
 })
 
