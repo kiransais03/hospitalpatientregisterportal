@@ -1,0 +1,32 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model hospitals {
+  hospitalid     Int       @unique
+  hospitalname   String    @db.VarChar(255) @unique
+}
+
+model psychiatrists {
+  psychid           String    @db.VarChar(255) @unique
+  psychname         String    @db.VarChar(255)
+  hospitalid        Int       @unique
+}
+
+model patientdetails {
+  patientid            String    @db.VarChar(255) @unique
+  patientname          String    @db.VarChar(255)
+  address              String    @db.VarChar(255)
+  email                String    @db.VarChar(255)
+  phoneno              String    @db.VarChar(255)
+  password             String    @db.VarChar(255)
+  patientphotolink     String    @db.VarChar(255)
+  psychid              String    @db.VarChar(255)
+  hospitalid           String    @db.VarChar(255)
+}
