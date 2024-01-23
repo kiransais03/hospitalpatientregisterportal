@@ -20,7 +20,7 @@ const gethospitaldbdata =async (hospitalid)=>{
 
         userData.data.totalpsychiatristcount = userData.data.psychiatristdetails.length;
 
-        let totalcount = userData.data.psychiatristdata.reduce((prevval,currobj,index)=>{
+        let totalcount = userData.data.psychiatristdetails.reduce((prevval,currobj,index)=>{
             return parseInt(currobj.patient_count)+prevval;
         },0)
 
