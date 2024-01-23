@@ -32,3 +32,9 @@ model patientdetails {
 }
 
 //npx prisma db push  (to sync the database tables structure with this schema)
+
+//CREATE SEQUENCE IF NOT EXISTS patientdetails_patientid_seq  (To keep the autoincrement value as sequence)
+
+//SELECT last_value FROM patientdetails_patientid_seq  (To check what was the last autoincremented value)
+
+//SELECT setval('patientdetails_patientid_seq', 125159, true);  (To instruct to use the autoincrement start value)

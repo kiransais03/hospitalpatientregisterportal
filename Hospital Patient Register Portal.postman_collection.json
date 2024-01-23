@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "a409e643-d566-4041-8f67-14c4d253e326",
+		"name": "Hospital Patient Register Portal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27686532"
+	},
+	"item": [
+		{
+			"name": "https://hospital-patient-register-portal.onrender.com/patients/addpatient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"patientname\" : \"Anil\",\r\n    \"address\" :\"Near Ramalayam,Gottikadu Village,Balaapalli Md,Tirupati Dt,AP\",\r\n    \"email\" : \"kiransais02@gmail.com\",\r\n    \"phoneno\" : \"+916302855263\",\r\n    \"password\":\"Kiransai123\",\r\n    \"patientphotolink\" : \"https://www.doogle.com\",\r\n    \"psychid\":\"44\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hospital-patient-register-portal.onrender.com/patients/addpatient",
+					"protocol": "https",
+					"host": [
+						"hospital-patient-register-portal",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"patients",
+						"addpatient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://hospital-patient-register-portal.onrender.com/hospitals/gethospitaldata/4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hospital-patient-register-portal.onrender.com/hospitals/gethospitaldata/4",
+					"protocol": "https",
+					"host": [
+						"hospital-patient-register-portal",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"hospitals",
+						"gethospitaldata",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
